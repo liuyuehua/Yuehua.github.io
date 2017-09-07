@@ -1,40 +1,51 @@
 ---
 layout: default
 ---
-<div class="flex-container">
-  {% include header.html %}
-  <article class="article-page">
-    <div class="page-image">
-      <div class="cover-image" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : page.img}}) center no-repeat; background-size: cover;"></div>
-    </div>
-    <div class="wrapper">
-      <div class="page-content">
-        <div class="header-page">
-          <h1 class="page-title">{{page.title}}</h1>
-          <div class="page-date"><time datetime="{{page.date}}">{{page.date | date: '%Y, %b %d'}}</time></div>
-        </div>
-        {{page.content | markdownify}}
-        <div class="page-footer">
-          <div class="page-tag">
-            <span>Tags:</span>
-            {% for tag in page.tags %}
-            <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">| {{ tag }}</a>
-            {% endfor %}
-          </div><!-- End Tags -->
-          <div class="page-share">
-            <span>Share:</span>
-            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
-          </div><!-- End Share -->
-        </div>
-        {% include author-box.html %}
-        {% include recent-post.html %}
-        {% include newsletter.html %}
-        {% include disqus.html %}
+<div id="main">
+  <article>
+    <header>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </header>
+
+    <section>
+      {{ content }}
+    </section>
+
+    <footer>
+      <div class="row">
+      {% if page.previous %}
+        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt">
+          <header>
+            <h2><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
+          </header>
+          <section>
+            {{ page.previous.excerpt }}
+          </section>
+          <footer>
+            <ul class="actions">
+              <li><a href="{{ page.previous.url }}" class="button">Read More</a></li>
+            </ul>
+          </footer>
+        </article>
+      {% endif %}
+
+      {% if page.next %}
+        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt f-right">
+          <header>
+            <h2><a href="{{ page.next.url }}">{{ page.next.title }}</a></h2>
+          </header>
+          <section>
+            {{ page.next.excerpt | markdownify }}
+          </section>
+          <footer>
+            <ul class="actions">
+              <li><a href="{{ page.next.url }}" class="button">Read More</a></li>
+            </ul>
+          </footer>
+        </article>
+      {% endif %}
       </div>
-    </div> <!-- End Wrapper -->
+    </footer>
   </article>
-  {% include search.html %}
-  {% include footer.html %}
 </div>

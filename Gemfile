@@ -1,16 +1,10 @@
-source "https://rubygems.org"
-gemspec
+source 'https://rubygems.org'
 
-# If you've just forked the repo,
-# please remove the content above and uncomment the following before bundling.
-#
-# source "https://rubygems.org"
+gem 'jekyll', '3.3.1'
 
-# gem 'jekyll', '= 3.4.5' # locked in to be consistent GitHub Pages.
-
-# group :jekyll_plugins do
-#   gem 'jekyll-feed'
-#   gem 'jekyll-redirect-from'
-#   gem 'jekyll-seo-tag'
-#   gem 'jekyll-sitemap'
-# end
+group :jekyll_plugins do
+	gem 'jekyll-feed', '0.6.0'
+	gem 'jekyll-seo-tag', '2.1.0'
+	gem 'jekyll-paginate', '1.1.0'
+	gem 'jekyll-sitemap', '1.0.0'
+end

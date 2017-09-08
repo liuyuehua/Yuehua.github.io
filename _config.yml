@@ -199,8 +199,8 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
-    size:
+    family: Lobster Two
+    size: 24
 
 
 
@@ -405,7 +405,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC8zMDc0Ni83Mjk4
+#livere_uid: MTAyMC8zMDc0Ni83Mjk4
 
 # Baidu Share
 # Available value:

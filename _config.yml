@@ -186,6 +186,7 @@ font:
   # Fallback to `global` font settings.
   posts:
     external: true
+    size: 24
     family:
 
   # Font settings for Logo
@@ -230,9 +231,9 @@ social_icons:
   Twitter: twitter
   Weibo: weibo
 
-Sidebar Avatar
+#Sidebar Avatar
 #in directory: /assets/images/avatar.gif
-avatar:/uploads/love.jpg
+#avatar:/uploads/love.jpg
 
 
 # Table Of Contents in the Sidebar

@@ -194,13 +194,13 @@ font:
   logo:
     external: true
     family: Lobster Two
-    size: 24
+    size: 30
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
     family: 
-    size: 24
+    size: 
 
 
 

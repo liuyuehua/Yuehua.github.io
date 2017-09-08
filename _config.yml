@@ -7,7 +7,7 @@
 title: Yuehua's Blog
 subtitle: My learning record.
 description:
-author: Yuehua
+author: Manu
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
@@ -231,8 +231,8 @@ social_icons:
   Weibo: weibo
 
 
-# Sidebar Avatar
-# in directory: /assets/images/avatar.gif
+Sidebar Avatar
+in directory: /assets/images/avatar.gif
 #avatar:
 
 

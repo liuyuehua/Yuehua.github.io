@@ -180,15 +180,13 @@ font:
   # Fallback to `global` font settings.
   headings:
     external: true
-    size: 24
     family:
 
   # Font settings for posts
   # Fallback to `global` font settings.
   posts:
     external: true
-    size: 24
-    family: Lobster Two
+    family: 
 
   # Font settings for Logo
   # Fallback to `global` font settings.

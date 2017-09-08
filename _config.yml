@@ -152,8 +152,8 @@ menu_icons:
 
 # Schemes
 #scheme: Muse
-scheme: Mist
-#scheme: Pisces
+#scheme: Mist
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -230,9 +230,9 @@ social_icons:
   Twitter: twitter
   Weibo: weibo
 
-#Sidebar Avatar
+Sidebar Avatar
 #in directory: /assets/images/avatar.gif
-#avatar:/uploads/love.jpg
+avatar:/uploads/love.jpg
 
 
 # Table Of Contents in the Sidebar

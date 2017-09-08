@@ -168,7 +168,7 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
-  host:
+  host: fonts.googleapis.com 
 
   # Global font settings used on <body> element.
   global:
@@ -193,13 +193,13 @@ font:
   # The `size` option use `px` as unit
   logo:
     external: true
-    family:
-    size:
+    family: Lobster Two
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: Lobster Two
+    family: 
     size: 24
 
 

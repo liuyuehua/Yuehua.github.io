@@ -7,11 +7,11 @@ tags:
 ---
 Teamlab Beijing
 
-![](liuyuehua.github.io/images/9-9/2.jpg) 
-![](liuyuehua.github.io/images/9-9/3.jpg) 
-![](liuyuehua.github.io/images/9-9/4.jpg) 
-![](liuyuehua.github.io/images/9-9/5.jpg) 
-![](liuyuehua.github.io/images/9-9/6.jpg) 
-![](liuyuehua.github.io/images/9-9/7.jpg) 
-![](liuyuehua.github.io/images/9-9/8.jpg) 
-![](liuyuehua.github.io/images/9-9/1.jpg) 
+<img src="/http://ow2dmnlmn.bkt.clouddn.com/2.jpg" class="full-image" /> 
+<!-- <img src="/image-url" class="full-image" />
+<img src="/image-url" class="full-image" />
+<img src="/image-url" class="full-image" />
+<img src="/image-url" class="full-image" />
+<img src="/image-url" class="full-image" />
+<img src="/image-url" class="full-image" />
+<img src="/image-url" class="full-image" /> -->

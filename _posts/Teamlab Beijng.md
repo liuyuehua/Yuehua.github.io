@@ -5,6 +5,6 @@ categories:
 - love/Beijing
 tags:
 ---
-<img src="images/9-9/2.jpg" class="full-image" />
+<img src="http://ow2dmnlmn.bkt.clouddn.com/2.jpg" class="full-image" />
 
 

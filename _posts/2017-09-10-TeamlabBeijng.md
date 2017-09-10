@@ -5,7 +5,8 @@ categories:
 - love/Beijing
 tags:
 ---
-<blockquote class="blockquote-center" font face="微软雅黑" size=20>2017年9月9日，于北京</font/blockquote>
+
+<blockquote class="blockquote-center">2017年9月9日，于北京</blockquote>
 
 <img src="http://ow2dmnlmn.bkt.clouddn.com/8.jpg" class="full-image" /> 
 <img src="http://ow2dmnlmn.bkt.clouddn.com/2.jpg" class="full-image" /> 

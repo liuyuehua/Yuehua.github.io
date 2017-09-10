@@ -230,9 +230,9 @@ social_icons:
   Twitter: twitter
   Weibo: weibo
 
-Sidebar Avatar
+# Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar:/images/love.jpg
+avatar: /images/love.jpg
 
 
 # Table Of Contents in the Sidebar

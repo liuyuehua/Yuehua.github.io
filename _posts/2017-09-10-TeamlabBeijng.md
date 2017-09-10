@@ -7,12 +7,11 @@ tags:
 ---
 Teamlab Beijing
 
-<img src="liuyuehua.github.io/images/9-9/1.jpg" class="full-image" />
-<img src="liuyuehua.github.io/images/9-9/2.jpg" class="full-image" />
-<img src="liuyuehua.github.io/images/9-9/3.jpg" class="full-image" />
-<img src="liuyuehua.github.io/images/9-9/4.jpg" class="full-image" />
-<img src="liuyuehua.github.io/images/9-9/5.jpg" class="full-image" />
-<img src="liuyuehua.github.io/images/9-9/6.jpg" class="full-image" />
-<img src="liuyuehua.github.io/images/9-9/7.jpg" class="full-image" />
-<img src="liuyuehua.github.io/images/9-9/8.jpg" class="full-image" />
-
+![](liuyuehua.github.io/images/9-9/2.jpg) 
+![](liuyuehua.github.io/images/9-9/3.jpg) 
+![](liuyuehua.github.io/images/9-9/4.jpg) 
+![](liuyuehua.github.io/images/9-9/5.jpg) 
+![](liuyuehua.github.io/images/9-9/6.jpg) 
+![](liuyuehua.github.io/images/9-9/7.jpg) 
+![](liuyuehua.github.io/images/9-9/8.jpg) 
+![](liuyuehua.github.io/images/9-9/1.jpg) 

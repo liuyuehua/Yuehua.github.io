@@ -5,5 +5,5 @@ categories:
 - love/Beijing
 tags:
 ---
-<img src="images/9-9/1.jpg" class="full-image" />
+<img src="liuyuehua.github.io/images/9-9/1.jpg" class="full-image" />
 

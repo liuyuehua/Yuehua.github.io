@@ -6,7 +6,7 @@ categories:
 tags:
 ---
 
-<blockquote class="blockquote-center"><font color=#0099ff size=7 face="黑体">2017年9月9日，于北京</font></blockquote>
+<blockquote class="blockquote-center">2017年9月9日，于北京</blockquote>
 
 <img src="http://ow2dmnlmn.bkt.clouddn.com/8.jpg" class="full-image" /> 
 <img src="http://ow2dmnlmn.bkt.clouddn.com/2.jpg" class="full-image" /> 

@@ -8,7 +8,7 @@ tags:
 ---
 
 <blockquote class="blockquote-center">2017年9月9日，于北京</blockquote>
-
+<!--more-->
 <img src="http://ow2dmnlmn.bkt.clouddn.com/8.jpg" class="full-image" /> 
 <img src="http://ow2dmnlmn.bkt.clouddn.com/2.jpg" class="full-image" /> 
 <img src="http://ow2dmnlmn.bkt.clouddn.com/3.jpg" class="full-image" /> 

@@ -3,7 +3,7 @@ title: Teamlab Beijing
 date: 2017-09-09
 categories:
 - love/Beijing
-tags:
+tags: Life
 ---
 
 <blockquote class="blockquote-center">2017年9月9日，于北京</blockquote>

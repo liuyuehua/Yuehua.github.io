@@ -118,11 +118,11 @@ index_with_subtitle: false
 menu:
   home: /
   categories: /categories/
-  about: /about/
+  #about: /about/
   archives: /archives/
   #categories: /categories/
   tags: /tags/
-  #about: /about/
+  about: /about/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 

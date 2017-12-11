@@ -592,7 +592,7 @@ pace: false
 #pace-theme-fill-left
 #pace-theme-flash
 #pace-theme-loading-bar
-pace-theme-mac-osx
+#pace-theme-mac-osx
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple

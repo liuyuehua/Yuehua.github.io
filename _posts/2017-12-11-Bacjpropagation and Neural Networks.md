@@ -8,5 +8,5 @@ tags:
 description: Table of Contents.
 ---
 #Introduction
-##Motivation
+## Motivation
 In this section we will develop expertise with an intuitive understanding of backpropagation, which is a way of computing gradients of expressions through recursive application of chain rule. Understanding of this process and its subtleties is critical for you to understand, and effectively develop, design and debug Neural Networks.

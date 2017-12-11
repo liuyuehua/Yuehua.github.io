@@ -124,7 +124,7 @@ menu:
   tags: /tags/
   about: /about/
   #sitemap: /sitemap.xml
-  #commonweal: /404.html
+  commonweal: /documents/linear-backprop.pdf
 
 
 # Enable/Disable menu icons.

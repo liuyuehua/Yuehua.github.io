@@ -6,6 +6,7 @@ categories:
 tags: 
 - Deep Learning
 description: Table of Contents.
+mathjax: true
 ---
 
 #Introduction

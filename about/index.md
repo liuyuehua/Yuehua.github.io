@@ -3,6 +3,5 @@ title: About Me
 layout: page
 ---
 
-Improving myself...
-test
+Improving myself...test
 

@@ -13,11 +13,10 @@ mathjax: true
 ## Motivation
 In this section we will develop expertise with an intuitive understanding of backpropagation, which is a way of computing gradients of expressions through recursive application of chain rule. Understanding of this process and its subtleties is critical for you to understand, and effectively develop, design and debug Neural Networks.
 
-质能方程$$E = mc^2$$
-test:
-$$X = A_{1}^N + A_{2}^N + A_{3}^N$$
-$$f(x, y) = 100 * \lbrace[(x + y) * 3] - 5\rbrace$$
-$$\sqrt[3]{X}$$
+质能方程$$E = mc^2$$\\
+$$X = A_{1}^N + A_{2}^N + A_{3}^N$$\\
+$$f(x, y) = 100 * \lbrace[(x + y) * 3] - 5\rbrace$$\\
+$$\sqrt[3]{X}$$\\
 
 ```python
 import numpy as np 

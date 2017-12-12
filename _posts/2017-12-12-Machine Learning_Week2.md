@@ -61,4 +61,22 @@ $$ \begin{align*}
 $$ \begin{align*}\; &\frac{\partial J(\theta)}{\partial \theta_j} &=& \frac1m  \vec{x_j}^{T} (X\theta - \vec{y}) \newline\newline\newline\; &\nabla J(\theta) & = & \frac 1m X^{T} (X\theta - \vec{y}) \newline\end{align*} $$
 
 Finally, the matrix notation (vectorized) of the Gradient Descent rule is:
+
 $$ \theta := \theta - \frac{\alpha}{m} X^{T} (X\theta - \vec{y}) $$
+
+## Feature Normalization
+Two techniques to help with this are **feature scaling** and **mean normalization**. Feature scaling involves dividing the input values by the range (i.e. the maximum value minus the minimum value) of the input variable, resulting in a new range of just 1. Mean normalization involves subtracting the average value for an input variable from the values for that input variable, resulting in a new average value for the input variable of just zero. To implement both of these techniques, adjust your input values as shown in this formula:
+$$ x_i := \dfrac{x_i - \mu_i}{s_i} $$
+
+$$μ_i$$: the average of all the values for feature (i)
+$$s_i$$: the range of values (max - min)
+Matlab code:
+```
+n = size(X, 2);
+
+for i = 1:n
+    feature = X(:, i);
+    mu(i) = mean(feature);
+    sigma(i) = std(feature);
+    X_norm(:,i) = (feature - mu(i))/sigma(i);
+```

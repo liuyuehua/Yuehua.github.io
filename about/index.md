@@ -8,10 +8,9 @@ LIU Yuehua
 
 ----
 
->  • +86 15600031588 
->  • <liuyh17@outlook.com>
->  Master at Chinese Academy of Sciences
->  - Bejjing, China 
+>• +86 15600031588 
+>• <liuyh17@outlook.com>
+>•Master at Chinese Academy of Sciences, Bejjing, China 
 
 ----
 
@@ -29,8 +28,7 @@ Education
 ----
 
 > <liuyh17@outlook.com> 
-> • +86 15600031588 • 
->  - Bejjing, China
+> • +86 15600031588 • Bejjing, China
 
 
 

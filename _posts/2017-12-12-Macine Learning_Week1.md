@@ -12,8 +12,10 @@ mathjax: true
 ### What is Machine Learning?
 Two definitions of Machine Learning are offered. Arthur Samuel described it as: *"the field of study that gives computers the ability to learn without being explicitly programmed."* This is an older, informal definition.
 Tom Mitchell provides a more modern definition: *"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E"*.
+
 In general, any machine learning problem can be assigned to one of two broad classifications:
 **Supervised learning（监督学习）** and **Unsupervised learning（非监督学习）**.
+
 ### Supervised Learning（监督学习）
 1. There is a relationship between the input and the output.
 2. Supervised learning problems are categorized into **"regression（回归）"** and **"classification（分类）"** problems.
@@ -48,6 +50,9 @@ $$ \begin{align*} \text{repeat until convergence: } \lbrace & \newline \theta_0 
 
 So, this is simply gradient descent on the original cost function J. This method looks at every example in the entire training set on every step, and is called **batch gradient descent**.
 
+## Reference
+[Machine Learning by Stanford University][1]
+[1]: https://www.coursera.org/learn/machine-learning/resources/JXWWS "Week 1 Lecture Notes"
 
 
 

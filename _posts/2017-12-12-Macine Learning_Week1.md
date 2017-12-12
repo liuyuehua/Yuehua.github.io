@@ -1,5 +1,5 @@
 ---
-title: Backpropagation and Neural Networks
+title: Macine Learning_Week1
 date: 2017-12-12
 categories:
 - Machine Learning

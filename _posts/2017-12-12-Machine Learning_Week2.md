@@ -69,7 +69,7 @@ Two techniques to help with this are **feature scaling** and **mean normalizatio
 $$ x_i := \dfrac{x_i - \mu_i}{s_i} $$
 
 $$μ_i$$: the average of all the values for feature (i),
-$$s_i$$: the range of values (max - min)
+$$s_i$$: the range of values (max - min).
 
 Matlab code:
 ```

@@ -27,7 +27,7 @@ In general, any machine learning problem can be assigned to one of two broad cla
 ## Linear Regression with One Variable（单变量线性回归）
 
 ### Cost Function(代价函数)
-We can measure the accuracy of our hypothesis function by using a **cost function.** 
+We can measure the accuracy of our hypothesis function by using a **cost function.**
 $$ J(\theta__0, \theta_1) = \dfrac {1}{2m} \displaystyle \sum_ \left ( \hat{y}_{i}- y_{i} \right)^2 = \dfrac {1}{2m} \displaystyle \sum\left (h_\theta (x_{i}) - y_{i} \right)^2 $$
 This function is otherwise called the **"Squared error function"**, or **"Mean squared error"**.
 **Goal**: minimize $$J(\theta_0, \theta_1)$$
@@ -39,7 +39,13 @@ $$\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta_0, \
 *At each iteration $$j$$, one should **simultaneously update** the parameters $$\theta_0, \theta_1, \... \theta_n$$. Updating a specific parameter prior to calculating another one on the j(th) iteration would yield to a wrong implementation.*
 #### Gradient Descent For Linear Regression:
 $$ \begin{align*} \text{repeat until convergence: } \lbrace & \newline \theta_0 := & \theta_0 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m}(h_\theta(x_{i}) - y_{i}) \newline \theta_1 := & \theta_1 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m}\left((h_\theta(x_{i}) - y_{i}) x_{i}\right) \newline \rbrace& \end{align*} $$
-So, this is simply gradient descent on the original cost function J. This method looks at every example in the entire training set on every step, and is called **batch gradient descent. **
+
+So, this is simply gradient descent on the original cost function J. This method looks at every example in the entire training set on every step, and is called **batch gradient descent.**
+
+
+
+
+
 
 
 

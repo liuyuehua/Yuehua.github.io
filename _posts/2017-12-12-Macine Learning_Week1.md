@@ -35,7 +35,6 @@ We can measure the accuracy of our hypothesis function by using a **cost functio
 $$J(\theta_0, \theta_1) = \dfrac {1}{2m} \displaystyle \sum _{i=1}^m \left ( \hat{y}_{i}- y_{i} \right)^2 = \dfrac {1}{2m} \displaystyle \sum _{i=1}^m \left (h_\theta (x_{i}) - y_{i} \right)^2 $$
 
 matlab code:
-
 ```
 h = X*theta;
 squareErrors = (h-y) .^2;

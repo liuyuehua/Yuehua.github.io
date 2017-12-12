@@ -51,8 +51,8 @@ $$ \begin{align*} \text{repeat until convergence: } \lbrace & \newline \theta_0 
 So, this is simply gradient descent on the original cost function J. This method looks at every example in the entire training set on every step, and is called **batch gradient descent**.
 
 ## Reference
-[1]: https://www.coursera.org/learn/machine-learning/resources/JXWWS "Machine Learning by Stanford University"
-
+[1][Machine Learning by Stanford University][1]
+[1]: https://www.coursera.org/learn/machine-learning/resources/JXWWS "week1"
 
 
 

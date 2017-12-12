@@ -1,5 +1,5 @@
 ---
-title: Macine Learning_Week1
+title: Machine Learning_Week1
 date: 2017-12-12
 categories:
 - Machine Learning

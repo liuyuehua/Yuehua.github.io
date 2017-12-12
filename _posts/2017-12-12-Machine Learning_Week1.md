@@ -56,6 +56,37 @@ $$\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta_0, \
 
 $$ \begin{align*} \text{repeat until convergence: } \lbrace & \newline \theta_0 := & \theta_0 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m}(h_\theta(x_{i}) - y_{i}) \newline \theta_1 := & \theta_1 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m}\left((h_\theta(x_{i}) - y_{i}) x_{i}\right) \newline \rbrace& \end{align*} $$
 
+Matlab code:
+```
+%   theta = GRADIENTDESCENT(X, y, theta, alpha, num_iters) updates theta by 
+%   taking num_iters gradient steps with learning rate alpha
+
+% Initialize some useful values
+m = length(y); % number of training examples
+J_history = zeros(num_iters, 1);
+
+for iter = 1:num_iters
+
+    % ====================== YOUR CODE HERE ======================
+    % Instructions: Perform a single gradient step on the parameter vector
+    %               theta. 
+    %
+    % Hint: While debugging, it can be useful to print out the values
+    %       of the cost function (computeCost) and gradient here.
+    %
+    h = X*theta;
+    theta = theta - alpha * (1/m) * (X' * (h-y));
+
+
+
+
+    % ============================================================
+
+    % Save the cost J in every iteration    
+    J_history(iter) = computeCost(X, y, theta);
+
+```
+
 So, this is simply gradient descent on the original cost function J. This method looks at every example in the entire training set on every step, and is called **batch gradient descent**.
 
 ## Reference

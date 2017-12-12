@@ -68,7 +68,7 @@ $$ \theta := \theta - \frac{\alpha}{m} X^{T} (X\theta - \vec{y}) $$
 Two techniques to help with this are **feature scaling** and **mean normalization**. Feature scaling involves dividing the input values by the range (i.e. the maximum value minus the minimum value) of the input variable, resulting in a new range of just 1. Mean normalization involves subtracting the average value for an input variable from the values for that input variable, resulting in a new average value for the input variable of just zero. To implement both of these techniques, adjust your input values as shown in this formula:
 $$ x_i := \dfrac{x_i - \mu_i}{s_i} $$
 
-$$μ_i$$: the average of all the values for feature (i)
+$$μ_i$$: the average of all the values for feature (i).
 $$s_i$$: the range of values (max - min)
 Matlab code:
 ```
@@ -80,3 +80,9 @@ for i = 1:n
     sigma(i) = std(feature);
     X_norm(:,i) = (feature - mu(i))/sigma(i);
 ```
+## Normal Equation
+The "Normal Equation" is a method of finding the optimum theta **without iteration**.
+$$ \theta = (X^T X)^{-1}X^T y $$
+
+## Reference
+[Machine Learning by Stanford University](https://www.coursera.org/learn/machine-learning/resources/QQx8l)

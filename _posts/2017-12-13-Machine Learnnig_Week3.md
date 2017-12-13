@@ -87,13 +87,14 @@ $$ \begin{align*}& y \in \lbrace0, 1 ... n\rbrace \newline& h_\theta^{(0)}(x) = 
 ## Regularization
 Regularization is designed to address the problem of **overfitting**.
 There are two main options to address the issue of overfitting:
+
 **1. Reduce the number of features:**
-- Manually select which features to keep.
-- Use a model selection algorithm.
+* Manually select which features to keep.
+* Use a model selection algorithm.
 
 **2. Regularization**
-- Keep all the features, but reduce the parameters.
-- Regularization works well when we have a lot of slightly useful features.
+* Keep all the features, but reduce the parameters.
+* Regularization works well when we have a lot of slightly useful features.
 
 ### Cost Function
 

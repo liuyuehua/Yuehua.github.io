@@ -76,9 +76,9 @@ The **vectorized** version:
 $$ \nabla J(\theta) = \frac{1}{m} \cdot  X^T \cdot \left(g\left(X\cdot\theta\right) - \vec{y}\right) $$
 
 ### Advanced Optimization
-**Conjugate gradient 
-BFGS 
-L-BFGS"**
+**Conjugate gradient** 
+**BFGS** 
+**L-BFGS**
 
 ### Multiclass Classification: One-vs-all
 

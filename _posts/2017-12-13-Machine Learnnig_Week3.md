@@ -14,6 +14,7 @@ Don't be confused by the name "Logistic Regression", it is named that way for hi
 **Hypothesis** should satisfy:
 
 $$ 0 \leq h_\theta (x) \leq 1 $$
+
 "**Sigmoid Function**," also called the "**Logistic Function**":
 
 $$ \begin{align*}& h_\theta (x) =  g ( \theta^T x ) \newline \newline& z = \theta^T x \newline& g(z) = \dfrac{1}{1 + e^{-z}}\end{align*} $$

@@ -2,7 +2,7 @@
 title: Image Classfication
 date: 2017-12-14
 categories:
-- CNN for Visual Recognition
+- CNN for Visual Recognition 
 tags: 
 - CS231n
 - Image Classfication

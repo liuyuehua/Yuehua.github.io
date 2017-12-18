@@ -48,7 +48,6 @@ test_set_y shape: (1, 50)
 sanity check after reshaping: [17 31 56 22 33]
 ```
 
-<font color='blue'>
 
 **Common steps for pre-processing a new dataset are:**
 - Figure out the dimensions and shapes of the problem (m_train, m_test, num_px, ...)

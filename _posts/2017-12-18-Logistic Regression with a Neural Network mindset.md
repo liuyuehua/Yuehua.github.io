@@ -11,7 +11,7 @@ mathjax: true
 ---
 ## Overview of the Problem set 
 
-**You will learn to:**
+**You will learn to:**  
 - Build the general architecture of a learning algorithm, including:
     - Initializing parameters
     - Calculating the cost function and its gradient

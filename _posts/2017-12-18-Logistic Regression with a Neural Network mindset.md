@@ -6,7 +6,6 @@ categories:
 tags: 
 - Deep Learning
 - Neural Networks and Deep Learning
-- deeplearning.ai
 description: Neural Networks Basics: Logistic Regression with a Neural Network mindset. How to build a logistic regression classifier to recognize cats. 
 mathjax: true
 ---

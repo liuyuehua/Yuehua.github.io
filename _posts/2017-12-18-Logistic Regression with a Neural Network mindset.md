@@ -6,7 +6,7 @@ categories:
 tags: 
 - Deep Learning
 - Neural Networks and Deep Learning
-description: Neural Networks Basics: Logistic Regression with a Neural Network mindset. How to build a logistic regression classifier to recognize cats. 
+description: Logistic Regression with a Neural Network mindset. How to build a logistic regression classifier to recognize cats. 
 mathjax: true
 ---
 ## Overview of the Problem set 

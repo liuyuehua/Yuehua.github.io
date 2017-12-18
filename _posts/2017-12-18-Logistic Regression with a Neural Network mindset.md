@@ -277,5 +277,5 @@ You can see the cost decreasing. It shows that the parameters are being learned.
 
 ## Reference
 1.[Deep Learning](https://www.deeplearning.ai/)  
-2.[Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome)
+2.[Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning/)
 

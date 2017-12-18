@@ -60,7 +60,7 @@ test_set_x = test_set_x_flatten/255.
 
 The following Figure explains why **Logistic Regression is actually a very simple Neural Network!**
 
-<img src="images/LogReg_kiank.png" style="width:650px;height:400px;">
+<img src="/images/LogReg_kiank.png" style="width:650px;height:400px;">
 
 **Mathematical expression of the algorithm**:
 

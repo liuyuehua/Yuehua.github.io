@@ -1,11 +1,12 @@
 ---
-title: Logistic Regression with a Neural Network
+title: Logistic Regression with a Neural Network mindset
 date: 2017-12-18
 categories:
 - Deep Learning
 tags: 
 - Deep Learning
 - Neural Networks and Deep Learning
+- deeplearning.ai
 description: Logistic Regression with a Neural Network mindset. How to build a logistic regression classifier to recognize cats. 
 mathjax: true
 ---
@@ -274,4 +275,7 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
 **Interpretation**:
 You can see the cost decreasing. It shows that the parameters are being learned. However, you see that you could train the model even more on the training set. Try to increase the number of iterations in the cell above and rerun the cells. You might see that the training set accuracy goes up, but the test set accuracy goes down. This is called overfitting. 
 
+## Reference
+1.[Deep Learning](https://www.deeplearning.ai/)  
+2.[Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome)
 

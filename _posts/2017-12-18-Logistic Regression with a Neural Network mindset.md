@@ -24,27 +24,9 @@ mathjax: true
     - each image is of shape (num_px, num_px, 3) where 3 is for the 3 channels (RGB). Thus, each image is square (height = num_px) and (width = num_px). 例如：64x64x3
 
 ```python
-Number of training examples: m_train = 209
-Number of testing examples: m_test = 50
-Height/Width of each image: num_px = 64
-Each image is of size: (64, 64, 3)
-train_set_x shape: (209, 64, 64, 3)
-train_set_y shape: (1, 209)
-test_set_x shape: (50, 64, 64, 3)
-test_set_y shape: (1, 50)
-```
-
-```python
 # Reshape the training and test examples
 train_set_x_flatten = train_set_x_orig.reshape(num_px*num_px*3, -1).T
 test_set_x_flatten = test_set_x_orig.reshape(num_px*num_px*3, -1).T
-```
-```python
-train_set_x_flatten shape: (209, 12288)
-train_set_y shape: (1, 209)
-test_set_x_flatten shape: (50, 12288)
-test_set_y shape: (1, 50)
-sanity check after reshaping: [17 31 56 22 33]
 ```
 
 **Common steps for pre-processing a new dataset are:**
@@ -60,7 +42,7 @@ test_set_x = test_set_x_flatten/255.
 
 The following Figure explains why **Logistic Regression is actually a very simple Neural Network!**
 
-<img src="/images/LogReg_kiank.png" style="width:650px;height:400px;">
+<img src="http://p153fvp85.bkt.clouddn.com/LogReg_kiank.png" style="width:650px;height:400px;">
 
 **Mathematical expression of the algorithm**:
 
@@ -94,15 +76,7 @@ def sigmoid(z):
 
 ```python
 def initialize_with_zeros(dim):
-    """
-    This function creates a vector of zeros of shape (dim, 1) for w and initializes b to 0.
-
-    Argument:
-    dim -- size of the w vector we want (or number of parameters in this case)
-    Returns:
-    w -- initialized vector of shape (dim, 1)
-    b -- initialized scalar (corresponds to the bias)
-    """
+  
     w = np.zeros((dim, 1))
     b = 0
 
@@ -128,19 +102,6 @@ $$ \frac{\partial J}{\partial b} = \frac{1}{m} \sum_{i=1}^m (a^{(i)}-y^{(i)})\ta
 # GRADED FUNCTION: propagate
 
 def propagate(w, b, X, Y):
-    """
-    Implement the cost function and its gradient for the propagation explained above
-
-    Arguments:
-    w -- weights, a numpy array of size (num_px * num_px * 3, 1)
-    b -- bias, a scalar
-    X -- data of size (num_px * num_px * 3, number of examples)
-    Y -- true "label" vector (containing 0 if non-cat, 1 if cat) of size (1, number of examples)
-
-    Return:
-    cost -- negative log-likelihood cost for logistic regression
-    dw -- gradient of the loss with respect to w, thus same shape as w
-    db -- gradient of the loss with respect to b, thus same shape as b
     
     m = X.shape[1]
     
@@ -171,24 +132,8 @@ The goal is to learn $w$ and $b$ by minimizing the cost function $J$. For a para
 # GRADED FUNCTION: optimize
 
 def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
-    """
-    This function optimizes w and b by running a gradient descent algorithm
     
-    Arguments:
-    w -- weights, a numpy array of size (num_px * num_px * 3, 1)
-    b -- bias, a scalar
-    X -- data of shape (num_px * num_px * 3, number of examples)
-    Y -- true "label" vector (containing 0 if non-cat, 1 if cat), of shape (1, number of examples)
-    num_iterations -- number of iterations of the optimization loop
-    learning_rate -- learning rate of the gradient descent update rule
-    print_cost -- True to print the loss every 100 steps
-    
-    Returns:
-    params -- dictionary containing the weights w and bias b
-    grads -- dictionary containing the gradients of the weights and bias with respect to the cost function
-    costs -- list of all the costs computed during the optimization, this will be used to plot the learning curve.
-    
-    
+   
     
     costs = []
     
@@ -324,8 +269,7 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
     return d
 ```
 
-![png](/images/output_46_0.png)
-
+![png](http://p153fvp85.bkt.clouddn.com/output_46_0.png)
 
 **Interpretation**:
 You can see the cost decreasing. It shows that the parameters are being learned. However, you see that you could train the model even more on the training set. Try to increase the number of iterations in the cell above and rerun the cells. You might see that the training set accuracy goes up, but the test set accuracy goes down. This is called overfitting. 

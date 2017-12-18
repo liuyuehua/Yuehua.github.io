@@ -1,5 +1,5 @@
 ---
-title: Logistic Regression with a Neural Network mindset
+title: Logistic Regression with a Neural Network
 date: 2017-12-18
 categories:
 - Deep Learning

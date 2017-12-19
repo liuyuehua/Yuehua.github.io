@@ -12,7 +12,7 @@ mathjax: true
 ---
 ## Neural Network model
 **Here is our model:**  
-<img src="http://p153fvp85.bkt.clouddn.com/classification_kiank.png" style="width:600px;height:300px;">  
+<img src="http://p153fvp85.bkt.clouddn.com/classification_kiank.png" style="width:600px;height:300px;" align=center>  
 
 **Mathematically:**  
 For one example $x^{(i)}$:

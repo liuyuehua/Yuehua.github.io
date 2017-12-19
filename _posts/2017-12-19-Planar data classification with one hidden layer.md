@@ -28,7 +28,7 @@ Given the predictions on all the examples, you can also compute the cost $J$ as 
 $$J = - \frac{1}{m} \sum\limits_{i = 0}^{m} \large\left(\small y^{(i)}\log\left(a^{[2] (i)}\right) + (1-y^{(i)})\log\left(1- a^{[2] (i)}\right)  \large  \right) \small \tag{6}$$  
 
 ###  Defining the neural network structure  
-Define three variables:  
+Define three variables:   
     - n_x: the size of the input layer  
     - n_h: the size of the hidden layer (set this to 4)   
     - n_y: the size of the output layer  

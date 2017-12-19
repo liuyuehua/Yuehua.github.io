@@ -62,7 +62,7 @@ return A2, cache
 ```  
 
 ### Compute Cost  
-Now that you have computed $A^{[2]}$ (in the Python variable "`A2`"), which contains $a^{[2](i)}$ for every example, you can compute the cost function as follows:
+Now that you have computed $A^{[2]}$ (in the Python variable "`A2`"), which contains $$a^{[2](i)}$$ for every example, you can compute the cost function as follows:
 
 $$J = - \frac{1}{m} \sum\limits_{i = 0}^{m} \large{(} \small y^{(i)}\log\left(a^{[2] (i)}\right) + (1-y^{(i)})\log\left(1- a^{[2] (i)}\right) \large{)} \small\tag{13}$$
 
@@ -103,7 +103,9 @@ def compute_cost(A2, Y, parameters):
 **Instructions**:
 Backpropagation is usually the hardest (most mathematical) part in deep learning. To help you, here again is the slide from the lecture on backpropagation. You'll want to use the six equations on the right of this slide, since you are building a vectorized implementation.  
 
-<img src="http://p153fvp85.bkt.clouddn.com/grad_summary.png" style="width:600px;height:300px;" align=center>  
+<div  align="center"> 
+<img src="http://p153fvp85.bkt.clouddn.com/grad_summary.png" style="width:600px;height:300px;">  
+</div>
 
 ```python
 def backward_propagation(parameters, cache, X, Y):
@@ -122,7 +124,9 @@ return grads
 
 **Illustration**: The gradient descent algorithm with a good learning rate (converging) and a bad learning rate (diverging). Images courtesy of Adam Harley.  
 
+<div  align="center">
 <img src="http://p153fvp85.bkt.clouddn.com/sgd.gif" style="width:400;height:400;">  <img src="http://p153fvp85.bkt.clouddn.com/sgd_bad.gif" style="width:400;height:400;">  
+</div>
 
 ### Update Parameters  
 ```python

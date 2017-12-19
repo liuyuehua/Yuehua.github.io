@@ -43,7 +43,9 @@ test_set_x = test_set_x_flatten/255.
 
 The following Figure explains why **Logistic Regression is actually a very simple Neural Network!**
 
+<div  align="center"> 
 <img src="http://p153fvp85.bkt.clouddn.com/LogReg_kiank.png" style="width:650px;height:400px;">
+</div>
 
 **Mathematical expression of the algorithm**:
 
@@ -270,7 +272,7 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
     return d
 ```
 
-![png](http://p153fvp85.bkt.clouddn.com/output_46_0.png)
+![png](http://p153fvp85.bkt.clouddn.com/output_50_1.png ==100x100)
 
 **Interpretation**:
 You can see the cost decreasing. It shows that the parameters are being learned. However, you see that you could train the model even more on the training set. Try to increase the number of iterations in the cell above and rerun the cells. You might see that the training set accuracy goes up, but the test set accuracy goes down. This is called overfitting. 

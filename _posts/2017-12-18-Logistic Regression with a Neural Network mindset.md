@@ -47,6 +47,7 @@ The following Figure explains why **Logistic Regression is actually a very simpl
 <img src="http://p153fvp85.bkt.clouddn.com/LogReg_kiank.png" style="width:650px;height:400px;">
 </div>
 
+
 **Mathematical expression of the algorithm**:
 
 For one example $x^{(i)}$:
@@ -273,7 +274,7 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
 ```
 
 <div  align="center"> 
-<img src="http://p153fvp85.bkt.clouddn.com/output_50_1.png" style="width:650px;height:400px;">
+<img src="http://p153fvp85.bkt.clouddn.com/output_50_1.png">
 </div>
 
 **Interpretation**:

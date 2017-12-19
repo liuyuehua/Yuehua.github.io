@@ -70,8 +70,8 @@ $$J = - \frac{1}{m} \sum\limits_{i = 0}^{m} \large{(} \small y^{(i)}\log\left(a^
 Implement `compute_cost()` to compute the value of the cost $J$.
 
 **Instructions**:
-- There are many ways to implement the cross-entropy loss. To help you, we give you how we would have implemented
-$- \sum\limits_{i=0}^{m}  y^{(i)}\log(a^{[2](i)})$:
+- Implement the cross-entropy loss. 
+$$ - \sum\limits_{i=0}^{m}  y^{(i)}\log(a^{[2](i)}) $$  
 ```python
 logprobs = np.multiply(np.log(A2),Y)
 cost = - np.sum(logprobs)                # no need to use a for loop!
@@ -108,7 +108,7 @@ def compute_cost(A2, Y, parameters):
 **Instructions**:
 Backpropagation is usually the hardest (most mathematical) part in deep learning. To help you, here again is the slide from the lecture on backpropagation. You'll want to use the six equations on the right of this slide, since you are building a vectorized implementation.  
 
-<img src="http://p153fvp85.bkt.clouddn.com/grad_summary.png" style="width:600px;height:300px;">  
+<img src="http://p153fvp85.bkt.clouddn.com/grad_summary.png" style="width:600px;height:300px;" align=center>  
 
 ```python
 def backward_propagation(parameters, cache, X, Y):
@@ -127,8 +127,7 @@ return grads
 
 **Illustration**: The gradient descent algorithm with a good learning rate (converging) and a bad learning rate (diverging). Images courtesy of Adam Harley.  
 
-<img src="http://p153fvp85.bkt.clouddn.com/sgd.gif" style="width:400;height:400;">   
-<img src="http://p153fvp85.bkt.clouddn.com/sgd_bad.gif" style="width:400;height:400;">  
+<img src="http://p153fvp85.bkt.clouddn.com/sgd.gif" style="width:400;height:400;">  <img src="http://p153fvp85.bkt.clouddn.com/sgd_bad.gif" style="width:400;height:400;">  
 
 ### Update Parameters  
 ```python
@@ -158,10 +157,10 @@ return grads
 ```  
 
 ## Predictions  
-**Reminder**: predictions = $y_{prediction} = \mathbb 1 \text{{activation > 0.5}} = \begin{cases}
+**Reminder**: predictions = $$y_{prediction} = \mathbb 1 \text{{activation > 0.5}} = \begin{cases}
       1 & \text{if}\ activation > 0.5 \\
       0 & \text{otherwise}
-    \end{cases}$    
+    \end{cases}$$    
 
 ```python
 def predict(parameters, X):
@@ -188,9 +187,14 @@ def predict(parameters, X):
 
 <table style="width:40%">
   <tr>
-    <td>**predictions mean**</td>
+    <td>predictions mean</td>
     <td> 0.666666666667 </td> 
   </tr>
   
-</table>
+</table>  
 
+## Reference
+1.[Deep Learning](https://www.deeplearning.ai/)  
+2.[Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning/)  
+3.[Demystifying Deep Convolutional Neural Networks](http://scs.ryerson.ca/~aharley/neural-networks/)  
+4.[CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/neural-networks-case-study/)

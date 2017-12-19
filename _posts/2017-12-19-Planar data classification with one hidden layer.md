@@ -29,8 +29,8 @@ $$J = - \frac{1}{m} \sum\limits_{i = 0}^{m} \large\left(\small y^{(i)}\log\left(
 
 ###  Defining the neural network structure  
 Define three variables:
-    - n_x: the size of the input layer
-    - n_h: the size of the hidden layer (set this to 4) 
+    - n_x: the size of the input layer  
+    - n_h: the size of the hidden layer (set this to 4)   
     - n_y: the size of the output layer  
 
 ### Initialize the model's parameters  

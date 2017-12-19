@@ -72,10 +72,6 @@ Implement `compute_cost()` to compute the value of the cost $J$.
 **Instructions**:
 - Implement the cross-entropy loss. 
 $$ - \sum\limits_{i=0}^{m}  y^{(i)}\log(a^{[2](i)}) $$  
-```python
-logprobs = np.multiply(np.log(A2),Y)
-cost = - np.sum(logprobs)                # no need to use a for loop!
-```
 
 ```python
 def compute_cost(A2, Y, parameters):

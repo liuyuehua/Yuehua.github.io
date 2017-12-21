@@ -14,10 +14,8 @@ b) $$s_l$$ = number of units (not counting bias unit) in layer l
 c) $$K$$= number of output units/classes  
 
 We denote $$h_\Theta(x)_k$$ as being a hypothesis that results in the $$k^{th}$$ output.
-Our cost function for neural networks is going to be a generalization of the one we used for logistic regression.
-
+Our cost function for neural networks is going to be a generalization of the one we used for logistic regression.  
 Recall that the cost function for regularized logistic regression was:  
-
 $$ J(\theta) = - \frac{1}{m} \sum_{i=1}^m \large[ y^{(i)}\ \log (h_\theta (x^{(i)})) + (1 - y^{(i)})\ \log (1 - h_\theta(x^{(i)}))\large] + \frac{\lambda}{2m}\sum_{j=1}^n \theta_j^2 $$  
 
 For neural networks, it is going to be slightly more complicated:  
@@ -28,8 +26,7 @@ $$ \begin{gather*}\large J(\Theta) = - \frac{1}{m} \sum_{i=1}^m \sum_{k=1}^K \le
 
 Given training set $$ \lbrace (x^{(1)}, y^{(1)}) \cdots (x^{(m)}, y^{(m)})\rbrace $$  
 
-Set $$\Delta^{(l)}_{i,j}$$
-
+Set $$\Delta^{(l)}_{i,j}$$  
 For training example t =1 to m:  
 - Set $$a^{(1)} := x^{(t)}$$  
 - Perform forward propagation to compute $$a^{(l)}$$ for $$l=2,3,…,L$$  

@@ -219,7 +219,7 @@ If $$g(.)$$ is the activation function,
 
 ### L-Model Backward  
 
-** Initializing backpropagation**:
+**Initializing backpropagation**:
 To backpropagate through this network, we know that the output is, 
 $$A^{[L]} = \sigma(Z^{[L]})$$. Your code thus needs to compute `dAL` $$= \frac{\partial \mathcal{L}}{\partial A^{[L]}}$$.
 To do so, use this formula (derived using calculus which you don't need in-depth knowledge of):

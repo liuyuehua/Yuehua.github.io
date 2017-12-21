@@ -12,7 +12,7 @@ mathjax: true
 ---
 ## Outline  
 
-- Initialize the parameters for a two-layer network and for an $L$-layer neural network.**初始化参数**
+- **Initialize** the parameters for a two-layer network and for an $L$-layer neural network. **初始化参数**
 - Implement the **Forward Propagation** module (shown in purple in the figure below).
      - Complete the LINEAR part of a layer's forward propagation step (resulting in $$Z^{[l]}$$).
      - ACTIVATION function (relu/sigmoid) has been given.  

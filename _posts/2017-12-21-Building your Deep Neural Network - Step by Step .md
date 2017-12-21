@@ -92,7 +92,6 @@ For even more convenience when implementing the $$L$$-layer Neural Net, you will
 
 <div  align="center">
 <img src="http://p153fvp85.bkt.clouddn.com/model_architecture_kiank.png" style="width:600px;height:400px;">
-<caption><center> **Figure 1**</center></caption><br>
 </div>  
 
 ```python
@@ -150,8 +149,7 @@ Compute the cross-entropy cost $J$, using the following formula: $$-\frac{1}{m} 
 ## Backward propagation module  
 
 <div  align="center">
-<img src="http://p153fvp85.bkt.clouddn.com/backprop_kiank.png" style="width:800px;height:500px;">
-<caption><center> **Figure 3** : Forward and Backward propagation for *LINEAR->RELU->LINEAR->SIGMOID* <br> *The purple blocks represent the forward propagation, and the red blocks represent the backward propagation.*  </center></caption>
+<img src="http://p153fvp85.bkt.clouddn.com/backprop_kiank.png" style="width:600px;height:400px;">
 </div>  
 
 ### Linear backward  
@@ -232,7 +230,7 @@ dAL = - (np.divide(Y, AL) - np.divide(1 - Y, 1 - AL)) # derivative of cost with 
 $$ grads["dW" + str(l)] = dW^{[l]}\tag{15} $$
 
 <div  align="center">
-<img src="http://p153fvp85.bkt.clouddn.com/mn_backward.png" style="width:800px;height:500px;">
+<img src="http://p153fvp85.bkt.clouddn.com/mn_backward.png" style="width:600px;height:400px;">
 </div>  
 
 ```python

@@ -5,7 +5,7 @@ categories:
 - Machine Learning
 tags: 
 - Machine Learning
-description: Machine Learning Week5 Notes. Neural Networks: Learning.
+description: Machine Learning Week5 Notes. Neural Networks Learning.
 mathjax: true
 ---
 ## Cost Function  

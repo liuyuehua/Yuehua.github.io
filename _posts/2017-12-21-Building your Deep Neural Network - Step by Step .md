@@ -275,7 +275,7 @@ If $$g(.)$$ is the activation function,
       dA_prev, dW, db = linear_backward(dZ, linear_cache)
 ```  
 
-###  L-Model Backward  
+### L-Model Backward  
 
 ** Initializing backpropagation**:
 To backpropagate through this network, we know that the output is, 
@@ -347,7 +347,7 @@ where $\alpha$ is the learning rate. After computing the updated parameters, sto
  for l in range(L):
         parameters["W" + str(l+1)] = parameters["W" + str(l+1)] - learning_rate * grads["dW" + str(l+1)]
         parameters["b" + str(l+1)] = parameters["b" + str(l+1)] - learning_rate * grads["db" + str(l+1)]
-```  
+```   
 
 ## Reference
 1.[Deep Learning](https://www.deeplearning.ai/)  

@@ -1,6 +1,6 @@
 ---
 title: Machine Learning_Week5
-date: 2017-12-15
+date: 2017-12-21
 categories:
 - Machine Learning
 tags: 
@@ -42,7 +42,8 @@ We can approximate the derivative of our cost function with:
 
 $$ \dfrac{\partial}{\partial\Theta}J(\Theta) \approx \dfrac{J(\Theta + \epsilon) - J(\Theta - \epsilon)}{2\epsilon} $$  
 
-With multiple theta matrices:  
+With multiple theta matrices:
+
 $$ \dfrac{\partial}{\partial\Theta_j}J(\Theta) \approx \dfrac{J(\Theta_1, \dots, \Theta_j + \epsilon, \dots, \Theta_n) - J(\Theta_1, \dots, \Theta_j - \epsilon, \dots, \Theta_n)}{2\epsilon} $$  
 
 ## Random Initialization  

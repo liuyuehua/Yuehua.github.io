@@ -27,68 +27,12 @@ mathjax: true
 - Finally **update** the parameters.
 
 <div  align="center">
-<img src="http://p153fvp85.bkt.clouddn.com/final%20outline.png" style="width:800px;height:500px;">
-<caption><center> **Figure 1**</center></caption><br>
+<img src="http://p153fvp85.bkt.clouddn.com/final%20outline.png" style="width:600px;height:400px;">
 </div>
 
 ## Initialization  
 
-The initialization for a deeper L-layer neural network is more complicated because there are many more weight matrices and bias vectors. When completing the `initialize_parameters_deep`, you should make sure that your dimensions match between each layer. Recall that $n^{[l]}$ is the number of units in layer $l$. Thus for example if the size of our input $X$ is $(12288, 209)$ (with $m=209$ examples) then:
-
-<table style="width:100%">
-
-
-    <tr>
-        <td>  </td> 
-        <td> **Shape of W** </td> 
-        <td> **Shape of b**  </td> 
-        <td> **Activation** </td>
-        <td> **Shape of Activation** </td> 
-    <tr>
-    
-    <tr>
-        <td> **Layer 1** </td> 
-        <td> $(n^{[1]},12288)$ </td> 
-        <td> $(n^{[1]},1)$ </td> 
-        <td> $Z^{[1]} = W^{[1]}  X + b^{[1]} $ </td> 
-        
-        <td> $(n^{[1]},209)$ </td> 
-    <tr>
-    
-    <tr>
-        <td> **Layer 2** </td> 
-        <td> $(n^{[2]}, n^{[1]})$  </td> 
-        <td> $(n^{[2]},1)$ </td> 
-        <td>$Z^{[2]} = W^{[2]} A^{[1]} + b^{[2]}$ </td> 
-        <td> $(n^{[2]}, 209)$ </td> 
-    <tr>
-   
-       <tr>
-        <td> $\vdots$ </td> 
-        <td> $\vdots$  </td> 
-        <td> $\vdots$  </td> 
-        <td> $\vdots$</td> 
-        <td> $\vdots$  </td> 
-    <tr>
-    
-   <tr>
-        <td> **Layer L-1** </td> 
-        <td> $(n^{[L-1]}, n^{[L-2]})$ </td> 
-        <td> $(n^{[L-1]}, 1)$  </td> 
-        <td>$Z^{[L-1]} =  W^{[L-1]} A^{[L-2]} + b^{[L-1]}$ </td> 
-        <td> $(n^{[L-1]}, 209)$ </td> 
-    <tr>
-    
-    
-   <tr>
-        <td> **Layer L** </td> 
-        <td> $(n^{[L]}, n^{[L-1]})$ </td> 
-        <td> $(n^{[L]}, 1)$ </td>
-        <td> $Z^{[L]} =  W^{[L]} A^{[L-1]} + b^{[L]}$</td>
-        <td> $(n^{[L]}, 209)$  </td> 
-    <tr>
-
-</table>
+The initialization for a deeper L-layer neural network is more complicated because there are many more weight matrices and bias vectors. When completing the `initialize_parameters_deep`, you should make sure that your dimensions match between each layer. Recall that $n^{[l]}$ is the number of units in layer $l$. Thus for example if the size of our input $X$ is $(12288, 209)$ (with $m=209$ examples).
 
 Remember that when we compute $W X + b$ in python, it carries out broadcasting. For example, if: 
 
@@ -122,13 +66,13 @@ for l in range(1, L):
 
 ## Forward propagation module  
 
-### Linear Forward  
+### Linear Forward    
 The linear forward module (vectorized over all the examples) computes the following equations:
 
 $$Z^{[l]} = W^{[l]}A^{[l-1]} +b^{[l]}\tag{4}$$
 
-where $$A^{[0]} = X$$.   
-
+where $$A^{[0]} = X$$.     
+  
 ### Linear-Activation Forward  
 
 - **Sigmoid**: $$\sigma(Z) = \sigma(W A + b) = \frac{1}{ 1 + e^{-(W A + b)}}$$. We have provided you with the `sigmoid` function. This function returns **two** items: the activation value "`a`" and a "`cache`" that contains "`Z`" (it's what we will feed in to the corresponding backward function). To use it you could just call: 
@@ -147,7 +91,7 @@ For even more convenience when implementing the $$L$$-layer Neural Net, you will
 
 
 <div  align="center">
-<img src="http://p153fvp85.bkt.clouddn.com/model_architecture_kiank.png" style="width:800px;height:500px;">
+<img src="http://p153fvp85.bkt.clouddn.com/model_architecture_kiank.png" style="width:600px;height:400px;">
 <caption><center> **Figure 1**</center></caption><br>
 </div>  
 

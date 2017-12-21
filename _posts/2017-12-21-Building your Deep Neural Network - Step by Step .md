@@ -17,7 +17,7 @@ mathjax: true
      - Complete the LINEAR part of a layer's forward propagation step (resulting in $$Z^{[l]}$$).
      - ACTIVATION function (relu/sigmoid) has been given.  
      - Combine the previous two steps into a new [LINEAR->ACTIVATION] forward function.  
-     - Stack the [LINEAR->RELU] forward function L-1 time (for layers 1 through L-1) and add a [LINEAR->SIGMOID] at the end (for the final layer $L$). This will bulid a new L_model_forward function.  
+     - Stack the [LINEAR->RELU] forward function L-1 time (for layers 1 through L-1) and add a [LINEAR->SIGMOID] at the end (for the final layer $$L$$). This will bulid a new L_model_forward function. 前$$L-1$$层为LINEAR->RELU, 最后一层为LINEAR->SIGMOID 
 - **Compute the loss**.
 - Implement the **backward propagation** module (denoted in red in the figure below).
     - Complete the LINEAR part of a layer's backward propagation step.
@@ -129,10 +129,10 @@ def L_model_forward(X, parameters):
                                              activation="sigmoid")
     caches.append(cache)
 
-    assert(AL.shape == (1,X.shape[1]))
-            
+    assert(AL.shape == (1,X.shape[1]))       
     return AL, caches
-```  
+```    
+**caches->linear_activation_cache**
 
 ## Cost function  
 

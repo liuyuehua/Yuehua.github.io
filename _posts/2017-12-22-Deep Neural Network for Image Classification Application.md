@@ -11,7 +11,7 @@ description: How to to build a deep neural network that classifies cat vs non-ca
 mathjax: true
 ---
 *相关函数见*  
-[Building deep neural network step by step](http://yuehua.me/deep%20learning/2017/12/21/Building-your-Deep-Neural-Network-Step-by-Step/)
+*[Building deep neural network step by step](http://yuehua.me/deep%20learning/2017/12/21/Building-your-Deep-Neural-Network-Step-by-Step/)*
 
 ## Two-layer neural network 
 ### Architecture  

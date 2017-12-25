@@ -18,9 +18,11 @@ we can split up the data into two sets: a **training set** and a **test set**.
 
 #### The test set error 
 1. For linear regression: 
+
 $$  J_{test}(\Theta) = \dfrac{1}{2m_{test}} \sum_{i=1}^{m_{test}}(h_\Theta(x^{(i)}_{test}) - y^{(i)}_{test})^2  $$  
 
 1. For classification ~ Misclassification error (aka 0/1 misclassification error):  
+
 $$  err(h_\Theta(x),y) =
 \begin{matrix}
 1 & \mbox{if } h_\Theta(x) \geq 0.5\ and\ y = 0\ or\ h_\Theta(x) < 0.5\ and\ y = 1\newline
@@ -28,13 +30,14 @@ $$  err(h_\Theta(x),y) =
 \end{matrix} $$  
 
 The average test error for the test set is:  
+
 $$  \text{Test Error} = \dfrac{1}{m_{test}} \sum^{m_{test}}_{i=1} err(h_\Theta(x^{(i)}_{test}), y^{(i)}_{test})  $$  
 
 ### Model Selection and Train/Validation/Test Sets  
 
 **Without the Validation Set (note: this is a bad method - do not use it)**  
-1. Optimize the parameters in $$theta$$ using the training set for each polynomial degree.  
-   使用训练集优化不同多项式的参数$$theta$$
+1. Optimize the parameters in $$Theta$$ using the training set for each polynomial degree.  
+   使用训练集优化不同多项式的参数$$Theta$$
 1. Find the polynomial degree d with the least error using the test set.
    利用测试集找出最小error的polynomial degree d  
 1. Estimate the generalization error also using the test set with $$J_{test}(\Theta^{(d)})$$,(d = theta from polynomial with lower error);  
@@ -54,7 +57,8 @@ To solve this, we can introduce a third set, the **Cross Validation Set**, to se
    评估。  
    
 ### Diagnosing Bias vs. Variance  
-High bias (underfitting):both $$J_{train}(\Theta)$$ and $$J_{CV}(\Theta)$$ will be high. Also,$$J_{CV}(\Theta) \approx J_{train}(\Theta)$$J_{train}(\Theta)$$will be low and $$J_{CV}(\Theta)$$will be much greater than $$J_{train}(\Theta)$$  
+**High bias (underfitting)**: both $$J_{train}(\Theta)$$ and $$J_{CV}(\Theta)$$ will be high. Also,$$J_{CV}(\Theta) \approx J_{train}(\Theta)$$
+**High variance (overfitting)**: $$J_{train}(\Theta)$$will be low and $$J_{CV}(\Theta)$$will be much greater than $$J_{train}(\Theta)$$  
 
 ### Regularization and Bias/Variance  
 λ太大导致欠拟合， λ太小导致过拟合。  
@@ -77,11 +81,13 @@ The recommended approach to solving machine learning problems is:
 $$  \dfrac{\text{True Positives}}{\text{Total number of predicted positives}}
 = \dfrac{\text{True Positives}}{\text{True Positives}+\text{False positives}}  $$  
 
-**Recall**：  （全不全）  
+**Recall**: （全不全）   
+
 $$  \dfrac{\text{True Positives}}{\text{Total number of actual positives}}= \dfrac{\text{True Positives}}{\text{True Positives}+\text{False negatives}}  $$  
 
-**F Score **:  
-$$  \text{F Score} = 2\dfrac{PR}{P + R} $$    
+**F Score**:
+
+$$  \text{F Score} = 2\dfrac{PR}{P + R}  $$    
 
 We want to train precision and recall on the cross validation set so as not to bias our test set.    
 

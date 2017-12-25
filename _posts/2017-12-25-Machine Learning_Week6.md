@@ -36,8 +36,8 @@ $$  \text{Test Error} = \dfrac{1}{m_{test}} \sum^{m_{test}}_{i=1} err(h_\Theta(x
 ### Model Selection and Train/Validation/Test Sets  
 
 **Without the Validation Set (note: this is a bad method - do not use it)**  
-1. Optimize the parameters in $$Theta$$ using the training set for each polynomial degree.  
-   使用训练集优化不同多项式的参数$$Theta$$
+1. Optimize the parameters in $$\Theta$$ using the training set for each polynomial degree.  
+   使用训练集优化不同多项式的参数$$\Theta$$
 1. Find the polynomial degree d with the least error using the test set.
    利用测试集找出最小error的polynomial degree d  
 1. Estimate the generalization error also using the test set with $$J_{test}(\Theta^{(d)})$$,(d = theta from polynomial with lower error);  
@@ -57,7 +57,7 @@ To solve this, we can introduce a third set, the **Cross Validation Set**, to se
    评估。  
    
 ### Diagnosing Bias vs. Variance  
-**High bias (underfitting)**: both $$J_{train}(\Theta)$$ and $$J_{CV}(\Theta)$$ will be high. Also,$$J_{CV}(\Theta) \approx J_{train}(\Theta)$$
+**High bias (underfitting)**: both $$J_{train}(\Theta)$$ and $$J_{CV}(\Theta)$$ will be high. Also,$$J_{CV}(\Theta) \approx J_{train}(\Theta)$$  
 **High variance (overfitting)**: $$J_{train}(\Theta)$$will be low and $$J_{CV}(\Theta)$$will be much greater than $$J_{train}(\Theta)$$  
 
 ### Regularization and Bias/Variance  

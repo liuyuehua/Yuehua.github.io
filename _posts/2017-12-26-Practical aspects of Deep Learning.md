@@ -55,10 +55,11 @@ return parameters
 A regularization term is added to the cost
 1. **The backpropagation function:**
 There are extra terms in the gradients with respect to weight matrices
-1. **Weights end up smaller ("weight decay"):**
-Weights are pushed to smaller values.
+1. **Weights end up smaller ("weight decay"):** Weights are pushed to smaller values.
+
 
 $$ J_{regularized} = \small \underbrace{-\frac{1}{m} \sum\limits_{i = 1}^{m} \large{(}\small y^{(i)}\log\left(a^{[L](i)}\right) + (1-y^{(i)})\log\left(1- a^{[L](i)}\right) \large{)} }_\text{cross-entropy cost} + \underbrace{\frac{1}{m} \frac{\lambda}{2} \sum\limits_l\sum\limits_k\sum\limits_j W_{k,j}^{[l]2} }_\text{L2 regularization cost} \tag{2} $$   
+
 
 **compute_cost_with_regularization:**  
 ```python

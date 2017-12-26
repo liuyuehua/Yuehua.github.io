@@ -11,7 +11,7 @@ description: How to to improve Deep Neural Networks.
 mathjax: true
 ---
 ## Initialization  
-A well chosen initialization can:  
+A well chosen initialization can:
 - Speed up the convergence of gradient descent  
 - Increase the odds of gradient descent converging to a lower training (and generalization) error   
 
@@ -73,7 +73,7 @@ Dropout is a widely used regularization technique that is specific to deep learn
 [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](http://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf "Dropout: A Simple Way to Prevent Neural Networks from Overfitting")
 
 #### Forward propagation with dropout  
-**Steps:**  
+**Steps:**
 1. Initialize matrix D1 = np.random.rand(..., ...)  
 1. Convert entries of D1 to 0 or 1 (using keep_prob as the threshold)  
 1. Shut down some neurons of A1  
@@ -87,7 +87,7 @@ Dropout is a widely used regularization technique that is specific to deep learn
 ```
 
 #### Backward propagation with dropout  
-**Steps:**  
+**Steps:**
 1. Apply mask D2 to shut down the same neurons as during the forward propagation.  
 1. Scale the value of neurons that haven't been shut down.    
 
@@ -114,12 +114,13 @@ dA2 = dA2 / keep_prob       # Step 2
 
 $$ \frac{\partial J}{\partial \theta} = \lim_{\varepsilon \to 0} \frac{J(\theta + \varepsilon) - J(\theta - \varepsilon)}{2 \varepsilon} \tag{1} $$
 
-**LINEAR -> RELU -> LINEAR -> RELU -> LINEAR -> SIGMOID**  
+**LINEAR -> RELU -> LINEAR -> RELU -> LINEAR -> SIGMOID:**  
 <div  align="center">
 <img src="http://p153fvp85.bkt.clouddn.com/NDgrad_kiank.png" style="width:600px;height:400px;">
 </div>    
 
-**dictionary_to_vector() and vector_to_dictionary()**  
+
+**dictionary_to_vector() and vector_to_dictionary():**  
 <div  align="center">
 <img src="http://p153fvp85.bkt.clouddn.com/dictionary_to_vector.png" style="width:600px;height:400px;">
 </div>  

@@ -13,8 +13,8 @@ mathjax: true
 ## Initialization
 
 A well chosen initialization can:
-- Speed up the convergence of gradient descent  
-- Increase the odds of gradient descent converging to a lower training (and generalization) error   
+1. Speed up the convergence of gradient descent  
+1. Increase the odds of gradient descent converging to a lower training (and generalization) error   
 
 ### He initialization  
 
@@ -116,13 +116,13 @@ $$ \frac{\partial J}{\partial \theta} = \lim_{\varepsilon \to 0} \frac{J(\theta 
 
 **LINEAR -> RELU -> LINEAR -> RELU -> LINEAR -> SIGMOID:**  
 <div  align="center">
-<img src="http://p153fvp85.bkt.clouddn.com/NDgrad_kiank.png" style="width:600px;height:400px;">
+<img src="http://p153fvp85.bkt.clouddn.com/NDgrad_kiank.png" style="width:800px;height:400px;">
 </div>    
 
 
 **dictionary_to_vector() and vector_to_dictionary():**  
 <div  align="center">
-<img src="http://p153fvp85.bkt.clouddn.com/dictionary_to_vector.png" style="width:600px;height:400px;">
+<img src="http://p153fvp85.bkt.clouddn.com/dictionary_to_vector.png" style="width:800px;height:400px;">
 </div>  
 
 ### About Gradient Checking  

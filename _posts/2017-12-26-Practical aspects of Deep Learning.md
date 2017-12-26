@@ -50,7 +50,6 @@ return parameters
 **L2-regularization** relies on the assumption that a model with small weights is simpler than a model with large weights. Thus, by penalizing the square values of the weights in the cost function you drive all the weights to smaller values. It becomes too costly for the cost to have large weights! This leads to a smoother model in which the output changes more slowly as the input changes.
 
 #### The implications of L2-regularization on:
-
 1. **The cost computation:**
 A regularization term is added to the cost
 1. **The backpropagation function:**

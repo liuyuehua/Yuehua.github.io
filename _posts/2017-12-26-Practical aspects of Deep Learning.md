@@ -10,7 +10,8 @@ tags:
 description: How to to improve Deep Neural Networks.
 mathjax: true
 ---
-## Initialization  
+## Initialization
+
 A well chosen initialization can:
 - Speed up the convergence of gradient descent  
 - Increase the odds of gradient descent converging to a lower training (and generalization) error   

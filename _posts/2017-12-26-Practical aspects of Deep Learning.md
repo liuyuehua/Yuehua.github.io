@@ -68,7 +68,7 @@ cost = cross_entropy_cost + L2_regularization_cost
 Add the regularization term's gradient  $$\frac{d}{dW} ( \frac{1}{2}\frac{\lambda}{m}  W^2) = \frac{\lambda}{m} W$$  
 
 ### Dropout  
-Dropout is a widely used regularization technique that is specific to deep learning. **It randomly shuts down some neurons in each iteration. **  
+Dropout is a widely used regularization technique that is specific to deep learning. **It randomly shuts down some neurons in each iteration.**  
 [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](http://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf "Dropout: A Simple Way to Prevent Neural Networks from Overfitting")
 
 #### Forward propagation with dropout  

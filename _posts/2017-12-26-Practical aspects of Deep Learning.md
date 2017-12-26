@@ -13,8 +13,8 @@ mathjax: true
 ## Initialization
 
 A well chosen initialization can:
-1. Speed up the convergence of gradient descent  
-1. Increase the odds of gradient descent converging to a lower training (and generalization) error   
+1. Speed up the convergence of gradient descent
+1. Increase the odds of gradient descent converging to a lower training (and generalization) error
 
 ### He initialization  
 

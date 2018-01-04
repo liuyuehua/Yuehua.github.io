@@ -12,7 +12,7 @@ mathjax: true
 ---
 ### Orthogonalization  
 Orthogonalization or orthogonality is a system design property that assures that modifying an instruction or a component of an algorithm will not create or propagate side effects to other components of the system. It becomes easier to verify the algorithms independently from one another, it reduces testing and development time.  
-对于需要调整什么来达到某个效果，这步骤叫做正交化.  
+对于需要调整什么来达到某个效果，这步骤叫做**正交化**.  
 
 如果根据某个Cost Function， 系统用在测试集上很好，但无法反应该算法在真实数据中的表现，这意味着要么开发集的分布设置不正确，要么是Cost Function的测量指标不对。  
 

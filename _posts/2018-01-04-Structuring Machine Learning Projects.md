@@ -11,8 +11,9 @@ description: How to build a successful machine learning project..
 mathjax: true
 ---
 ### Orthogonalization  
+
 Orthogonalization or orthogonality is a system design property that assures that modifying an instruction or a component of an algorithm will not create or propagate side effects to other components of the system. It becomes easier to verify the algorithms independently from one another, it reduces testing and development time.  
-对于需要调整什么来达到某个效果，这步骤叫做**正交化**.  
+对于需要调整什么来达到某个效果，这步骤叫做*正交化*.  
 
 如果根据某个Cost Function， 系统用在测试集上很好，但无法反应该算法在真实数据中的表现，这意味着要么开发集的分布设置不正确，要么是Cost Function的测量指标不对。  
 
@@ -26,14 +27,14 @@ Satisficing metric： 如运行时间，消耗内存等。满足指标只需达�
 
 ### Train/dev/test distributions  
 Setting up the training, development and test sets have a huge impact on productivity. It is important to choose the development and test sets from the same distribution and it must be taken randomly from all the data.  
-**Guideline**  
+**Guideline:**  
 Choose a dev set and test set to reflect data you expect to get in the future and consider important to do well on.  
 
 ### Size of the dev and test sets  
-**Modern era – Big data**
+**Modern era – Big data**  
 Now, because a large amount of data is available, we don’t have to compromised as much and can use a greater portion to train the model.  
 
-**Guidelines**  
+**Guidelines**
 1. Set up the size of the test set to give a high confidence in the overall performance of the system.
 1. Test set helps evaluate the performance of the final classifier which could be less 30% of the whole data set.
 1. The development set has to be big enough to evaluate different ideas.
@@ -57,12 +58,13 @@ If the difference between human-level error and the training error is bigger tha
 If the difference between training error and the development error is bigger than the difference between the human-level error and the training error, the focus should be on variance reduction technique which are bigger data set, regularization or change the neural networks architecture or try various hyperparameters search.
 
 ### Carrying out error analysis  
-误差分析： 找一组错误例子（可能在dev或者test）， 观察错误标记的例子，统计并归纳。  
+误差分析： 找一组错误例子(可能在dev或者test)，观察错误标记的例子，统计并归纳。  
 
 ### Cleaning up incorrectly labeled data  
 事实证明深度学习算法对于中的随机误差是相当鲁棒的。但对系统性的错误就没那么好的鲁棒。  
 
-### Build your first system quickly, then iterate
+### Build your first system quickly, then iterate  
+从构建简单模型入手，尽快迭代。  
 
 ### Training and testing on different distributions  
 需求目标最大。  
@@ -72,15 +74,15 @@ If the difference between training error and the development error is bigger tha
 - 开发集数据来自不同的分布。    
 - 需要辨清开发集上的误差有多少是因为算法没看到开发集中的数据导致的(*方差*),多少是因为开发集数据分布本身就不一样(*数据不匹配*).  
 
-**Solution**  
+**Solution：**
 - 定义一个新的数据train-dev set 从训练集中抽取数据,和训练集数据来自同一个数据分布,但是不用于训练数据.  
 - 分别将分类器在训练集/训练-开发集/开发集上运行,获取其准确率信息  
 - 假如在训练集上误差为1%,在训练-开发集上误差为9%,在开发集上误差为10%  
-分类器在训练集和训练开发集上误差差距较大,这表明算法没有识别没有看到过的数据,这表明分类器本身**方差较大**  
-分类器在训练-开发集和开发集上误差差距不大,表明算法误差的差距不是主要由于数据 **分布不一致** 导致的  
+分类器在训练集和训练开发集上误差差距较大,这表明算法没有识别没有看到过的数据,这表明分类器本身*方差较大*  
+分类器在训练-开发集和开发集上误差差距不大,表明算法误差的差距不是主要由于数据*分布不一致*导致的  
 - 假如在训练集上误差为1%,在训练-开发集上误差为1.5%,在开发集上误差为10%  
-分类器在训练集和训练开发集上误差差距较小,这表明分类器本身**方差不大  **
-分类器在训练-开发集和开发集上误差差距很大,表明算法误差的差距主要由于 **数据不匹配** 导致的  
+分类器在训练集和训练开发集上误差差距较小,这表明分类器本身*方差不大*
+分类器在训练-开发集和开发集上误差差距很大,表明算法误差的差距主要由于*数据不匹配*导致的  
 
 ### Addressing data mismatch  
 - 误差分析  
@@ -97,8 +99,8 @@ If the difference between training error and the development error is bigger tha
 - Can train a big enough neural network to do well on all the tasks.  
 
 ### End-to-End Deep Learning  
-简而言之，以前有一些数据处理系统或者学习他们需要多个阶段的，那么端到端深度学习就是忽略所有这些不同的阶段，用单个神经网代替它。  
-需要大量的数据。  
+- 简而言之，以前有一些数据处理系统或者学习他们需要多个阶段的，那么端到端深度学习就是忽略所有这些不同的阶段，用单个神经网代替它。  
+- 需要大量的数据。  
 
 ### Reference
 1.[Deep Learning](https://www.deeplearning.ai/)  

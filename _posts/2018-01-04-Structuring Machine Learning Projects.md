@@ -70,7 +70,7 @@ If the difference between training error and the development error is bigger tha
 ### Bias and Variance with mismatched data distributions  
 - 算法只见过训练集数据,没见过开发集数据。  
 - 开发集数据来自不同的分布。    
-- 需要辨清开发集上的误差有多少是因为算法没看到开发集中的数据导致的**方差**,多少是因为开发集数据分布本身就不一样**数据不匹配**  
+- 需要辨清开发集上的误差有多少是因为算法没看到开发集中的数据导致的(*方差*),多少是因为开发集数据分布本身就不一样(*数据不匹配*).  
 
 **Solution**  
 - 定义一个新的数据train-dev set 从训练集中抽取数据,和训练集数据来自同一个数据分布,但是不用于训练数据.  

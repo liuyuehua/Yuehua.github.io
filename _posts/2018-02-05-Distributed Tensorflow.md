@@ -101,4 +101,5 @@ A common training configuration, called "data parallelism," involves multiple ta
 
 ## Reference
 1.[Distributed Tensorflow via Google](https://www.tensorflow.org/deploy/distributed)  
-2.[TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems](https://arxiv.org/pdf/1603.04467.pdf)
+2.[TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems](https://arxiv.org/pdf/1603.04467.pdf)  
+3.[Distributed Tensorflow Architecture](https://www.tensorflow.org/extend/architecture)

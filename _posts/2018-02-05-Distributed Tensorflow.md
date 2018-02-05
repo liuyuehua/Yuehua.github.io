@@ -88,3 +88,13 @@ A common training configuration, called "data parallelism," involves multiple ta
 <div  align="center">
 <img src="http://p3ny2xk3h.bkt.clouddn.com/dt_2.png" style="width:600px;height:400px;">
 </div>  
+
+- **Asynchronous training**. In this approach, each replica of the graph has an independent training loop that executes without coordination. It is compatible with both forms of replication above.  
+<div  align="center">
+<img src="http://p3ny2xk3h.bkt.clouddn.com/dt_3.png" style="width:600px;height:400px;">
+</div>
+
+- **Synchronous training**. In this approach, all of the replicas read the same values for the current parameters, compute gradients in parallel, and then apply them together. It is compatible with in-graph replication (e.g. using gradient averaging as in the CIFAR-10 multi-GPU trainer), and between-graph replication (e.g. using the tf.train.SyncReplicasOptimizer).  
+<div  align="center">
+<img src="http://p3ny2xk3h.bkt.clouddn.com/dt_4.png" style="width:600px;height:400px;">
+</div>

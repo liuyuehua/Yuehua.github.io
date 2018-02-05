@@ -11,7 +11,6 @@ tags:
 description: Note of distributed tensorflow.
 mathjax: true
 ---
-# Distributed Tensorflow  
 
 ## Create a cluster  
 A TensorFlow "cluster" is a set of "tasks" that participate in the distributed execution of a TensorFlow graph. Each task is associated with a TensorFlow "server", which contains a "master" that can be used to create sessions, and a "worker" that executes operations in the graph. A cluster can also be divided into one or more "jobs", where each job contains one or more tasks.  

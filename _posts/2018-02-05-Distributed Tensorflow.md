@@ -17,7 +17,7 @@ mathjax: true
 A TensorFlow "cluster" is a set of "tasks" that participate in the distributed execution of a TensorFlow graph. Each task is associated with a TensorFlow "server", which contains a "master" that can be used to create sessions, and a "worker" that executes operations in the graph. A cluster can also be divided into one or more "jobs", where each job contains one or more tasks.  
 
 ### Create a tf.train.ClusterSpec to describe the cluster  
-Create a** tf.train.ClusterSpec** that describes all of the tasks in the cluster. This should be the same for each task.
+Create a**tf.train.ClusterSpec** that describes all of the tasks in the cluster. This should be the same for each task.
 
 ```python
 tf.train.ClusterSpec({"local": ["localhost:2222", "localhost:2223"]})

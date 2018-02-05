@@ -80,5 +80,11 @@ with tf.Session("grpc://worker7.example.com:2222") as sess:
 A common training configuration, called "data parallelism," involves multiple tasks in a worker job training the same model on different mini-batches of data, updating shared parameters hosted in one or more tasks in a ps job. All tasks typically run on different machines. There are many ways to specify this structure in TensorFlow, and we are building libraries that will simplify the work of specifying a replicated model. Possible approaches include:  
 
 - **In-graph replication**. In this approach, the client builds a single tf.Graph that contains one set of parameters (in tf.Variable nodes pinned to /job:ps); and multiple copies of the compute-intensive part of the model, each pinned to a different task in /job:worker.  
+<div  align="center">
+<img src="http://p3ny2xk3h.bkt.clouddn.com/dt_1.png" style="width:600px;height:400px;">
+</div>  
 
-- **Between-graph replication**. In this approach, there is a separate client for each /job:worker task, typically in the same process as the worker task. Each client builds a similar graph containing the parameters (pinned to /job:ps as before using tf.train.replica_device_setter to map them deterministically to the same tasks); and a single copy of the compute-intensive part of the model, pinned to the local task in /job:worker.
+- **Between-graph replication**. In this approach, there is a separate client for each /job:worker task, typically in the same process as the worker task. Each client builds a similar graph containing the parameters (pinned to /job:ps as before using tf.train.replica_device_setter to map them deterministically to the same tasks); and a single copy of the compute-intensive part of the model, pinned to the local task in /job:worker.  
+<div  align="center">
+<img src="http://p3ny2xk3h.bkt.clouddn.com/dt_2.png" style="width:600px;height:400px;">
+</div>  

@@ -97,4 +97,8 @@ A common training configuration, called "data parallelism," involves multiple ta
 - **Synchronous training**. In this approach, all of the replicas read the same values for the current parameters, compute gradients in parallel, and then apply them together. It is compatible with in-graph replication (e.g. using gradient averaging as in the CIFAR-10 multi-GPU trainer), and between-graph replication (e.g. using the tf.train.SyncReplicasOptimizer).  
 <div  align="center">
 <img src="http://p3ny2xk3h.bkt.clouddn.com/dt_4.png" style="width:600px;height:400px;">
-</div>
+</div>  
+
+## Reference
+1.[Distributed Tensorflow via Google](https://www.tensorflow.org/deploy/distributed)  
+2.[TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems](https://arxiv.org/pdf/1603.04467.pdf)

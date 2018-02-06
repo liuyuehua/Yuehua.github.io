@@ -216,8 +216,8 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   #LinkLabel: Link
-  Github: https://github.com/liuyh17
-  E-mail: liuyh17@outlook.com
+  Github: https://github.com/liuyh17  
+  E-mail: liuyh17@outlook.com  
   LinkedIn: http://www.linkedin.com/in/%E8%B7%83%E5%8D%8E-%E5%88%98-512346ab/
 
 
@@ -230,10 +230,11 @@ social_icons:
   enable: true
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
-  Twitter: twitter
-  Weibo: weibo
-  LinkedIn: linkedin
+  GitHub: github  
+  Twitter: twitter  
+  Weibo: weibo  
+  E-mail: envelope-square  
+  LinkedIn: linkedin  
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif

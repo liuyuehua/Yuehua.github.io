@@ -34,7 +34,7 @@ Tensorflow最早是由Google Brain Team开发，是一个使用data flow graphs�
 一个操作有一个名字。它表示一个抽象的计算（比如说，“矩阵相乘”或者“相加”）。一个操作可以有属性（attribute），所有的属性必须提供或者在图构造的过程中推断出以实例化一个节点来执行操作。属性通常的使用方式是让操作在不同的张量元素类型上多态（例如，两个 float 类型的张量和两个 int32 类型的张量）。核（kernel）是一种操作的特别实现，可以运行在一个特定类型的设备上（如 CPU 或者 GPU）。TensorFlow 的 binary 定义了可以通过注册（registration）机制实现的操作和核的集合，这个集合可以通过连接额外的操作/核的定义/注册。表 1 展示了内置于 TensorFlow 核心库的一些操作类型。  
 
 <div  align="center">
-<img src="http://p3ny2xk3h.bkt.clouddn.com/dtf3.png" style="width:600px;height:400px;">
+<img src="http://p3ny2xk3h.bkt.clouddn.com/dtf3.png" style="width:300px;height:200px;">
 </div> 
 
 ### Sessions

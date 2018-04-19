@@ -52,10 +52,10 @@ TensorFlow 系统的主要部分就是客户端，它使用了会话接口来和
 <img src="http://p3ny2xk3h.bkt.clouddn.com/dtf4.png" style="width:600px;height:400px;">
 </div> 
 
-### Devices  
+#### Devices  
 设备是 TensorFlow 的计算核心。每个 worker 负责一个或者多个设备，每个设备有一个设备类型和一个名字。设备名字由识别设备类型的部分，在 worker 中的设备索引，以及在分布式设定中，worker 的 job和任务（或者 localhost 当设备是和进程在同一机器时）的标志构成。一些例子如/job: localhost/ device : cpu:0 或者 /job :worker/ task: 17/ device : gpu:3。 我们已实现了 CPU 和 GPU 的设备接口而其他的设备类型也有了通过注册机制完成的设备实现方式。每个设备对象负责管理分配和解除分配设备内存，对在 TensorFlow 实现中的更高层请求任意 kernel 的执行调度管理。  
 
-### Tensors  
+#### Tensors  
 > A tensor in our implementation is a typed, multidimensional array. We support a variety of tensor element types, including signed and unsigned integers ranging in size from 8 bits to 64 bits, IEEE float and double types, a complex number type, and a string type (an arbitrary byte array). Backing store of the appropriate size is managed by an allocator that is specific to the device on which the tensor resides. Tensor backing store buffers are reference counted and are deallocated when no references remain.  
 
 实现中的张量是一种有类型的、多维度数组。我们支持若干张量元素类型，包含大小为从 8 bit 到 64 bit 的带符号和无符号整型，IEEE 浮点数和双精度类型、复数类型和字符串类型（任意长的字节数组）。合适大小的后台存储通过一个分配器进行管理，该分配器由张量所处的设备确定。张量的后端存储缓存是引用计数的并在没有引用存在时解除分配。

@@ -11,7 +11,7 @@ tags:
 description: The white paper of Google's distributed tensorflow.
 mathjax: true
 ---
-# 分布式Tensorflow：在复杂分布式系统中进行大规模机器学习  
+  
 ## Introduction  
 Tensorflow最早是由Google Brain Team开发，是一个使用data flow graphs的开源机器学习软件库，支持desktop， server或者带有单独API的移动端的多CPU或多GPU。  
 

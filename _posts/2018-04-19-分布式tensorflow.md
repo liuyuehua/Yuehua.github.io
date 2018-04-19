@@ -1,5 +1,5 @@
 ---
-title: 分布式Tensorflow：在复杂分布式系统中进行大规模机器学习
+title: 分布式Tensorflow：在复杂多样的分布式系统中进行大规模机器学习
 date: 2018-04-19
 categories:
 - Machine Learning

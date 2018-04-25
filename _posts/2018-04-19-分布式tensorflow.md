@@ -89,7 +89,7 @@ TensorFlow 系统的主要部分就是客户端，它使用了会话接口来和
 
 通过这种方式处理通信，我们也允许了不同设备上的图中的个别节点调度可以被去中心化到 workers 上：Send 和 Receive 节点传达了在不同的 worker 和 设备间必要的同步信息，master 仅仅需要对每个图的执行给出一个 Run 请求给那些包含图中任意节点的 worker，而不是会对所有节点或者每个跨设备通信都进行调度。这也让系统更加可扩展，并允许比通过 master 来强制进行所有的调度更加精确的节点执行。
 
-### Distributed Executio  
+### Distributed Execution  
 > Distributed execution of a graph is very similar to multidevice execution. After device placement, a subgraph is created per device. Send/Receive node pairs that communicate across worker processes use remote communication mechanisms such as TCP or RDMA to move data across machine boundaries.
 
 计算图的分布式执行非常类似于多设备执行。在设备置放后，子图会针对每个设备创建。用于 worker 进程之间的通信的 Send/Receive 节点对使用了诸如 TCP 或者 RDMA 这样的远程通信机制进行跨机器的数据迁移。 

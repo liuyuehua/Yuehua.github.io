@@ -10,9 +10,8 @@ tags:
 description: How to to build a deep neural network that classifies cat vs non-cat images.
 mathjax: true
 ---
-*Helper functions as flows:*   
-  
-[Building deep neural network step by step](http://yuehua.me/deep%20learning/2017/12/21/Building-your-Deep-Neural-Network-Step-by-Step/)
+**Helper functions as flows:**   
+[Building deep neural network step by step](http://yuehua.me/deep%20learning/2017/12/21/Building-your-Deep-Neural-Network-Step-by-Step/)  
 
 
 ## Two-layer neural network 
